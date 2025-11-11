@@ -98,7 +98,7 @@ The frontend application will start on `http://localhost:3000` and automatically
    - Enter your comment in the dialog that appears
 5. **Manage Pins**:
    - Hover over any pin to see the comment details
-   - Delete your own pins using the × button in the tooltip
+   - Delete your own pins using the × button
    - Drag and drop your own pins to reposition them
 6. **Navigate Images**: Use the sidebar to switch between different images
 7. **Delete Images**: Click the 🗑️ icon next to your own images to delete them
@@ -126,44 +126,6 @@ The frontend application will start on `http://localhost:3000` and automatically
 - `PATCH /threads/:id` - Update thread position (creator only)
   - Body: `{"x": <number>, "y": <number>}`
 
-## 🏗️ Project Structure
-
-```
-bananaz-image-tagger/
-├── backend/
-│   ├── src/
-│   │   ├── index.ts          # Main Express application
-│   │   ├── types.ts          # TypeScript type definitions
-│   │   ├── storage.ts        # In-memory data storage
-│   │   ├── middleware.ts     # Authentication middleware
-│   │   └── sanitizer.ts      # Input sanitization
-│   ├── package.json
-│   └── tsconfig.json
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── ImageViewer.tsx    # Image display with pins
-│   │   │   ├── ImageViewer.css
-│   │   │   ├── Pin.tsx            # Interactive pin component
-│   │   │   └── Pin.css
-│   │   ├── pages/
-│   │   │   ├── Login.tsx          # Login page
-│   │   │   ├── Signup.tsx         # Signup page
-│   │   │   ├── MainApp.tsx        # Main application
-│   │   │   ├── MainApp.css
-│   │   │   └── Auth.css
-│   │   ├── App.tsx               # App router
-│   │   ├── AuthContext.tsx       # Authentication context
-│   │   ├── api.ts               # API client
-│   │   ├── types.ts             # TypeScript types
-│   │   ├── index.tsx            # Entry point
-│   │   └── index.css
-│   ├── public/
-│   │   └── index.html
-│   ├── package.json
-│   └── tsconfig.json
-└── README.md
-```
 
 ## 🎨 Design Features
 
